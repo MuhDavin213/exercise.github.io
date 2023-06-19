@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    
+    .container {
+      width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"],
+    .form-group input[type="number"],
+    .form-group input[type="date"],
+    .form-group textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    
+    .form-group select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    
+    .form-group textarea {
+      resize: vertical;
+    }
+    
+    input[type="submit"],
+    .back-button {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+    input[type="submit"]:hover,
+    .back-button:hover {
+      background-color: #45a049;
+    }
+    
+    .back-button a {
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <script src="script.js"></script>
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="text-input">Nama :</label>
+        <input type="text" id="text-input" name="text-input">
+      </div>
+
+      <div class="form-group">
+        <label for="date-input">Date :</label>
+        <input type="date" id="date-input" name="date-input">
+      </div>
+
+      <div class="form-group">
+        <label for="checkbox-input">Jurusan:</label>
+        <input type="checkbox" id="checkbox-input" name="checkbox-input">
+        <label for="checkbox-input">Teknologi Informasi</label>
+        <input type="checkbox" id="checkbox-input2" name="checkbox-input">
+        <label for="checkbox-input2">AIK</label>
+        <input type="checkbox" id="checkbox-input3" name="checkbox-input">
+        <label for="checkbox-input3">Hukum</label>
+      </div>
+
+      <div class="form-group">
+        <label for="radio-input">Fakultas :</label>
+        <input type="radio" id="radio-input" name="radio-input">
+        <label for="radio-input">Teknik</label>
+        <input type="radio" id="radio-input2" name="radio-input">
+        <label for="radio-input2">Agama Islam</label>
+        <input type="radio" id="radio-input3" name="radio-input">
+        <label for="radio-input3">Hukum</label>
+      </div>
+      
+      <div class="form-group">
+        <label for="email-input">Email :</label>
+        <input type="email" id="email-input" name="email-input">
+      </div>
+      
+      <div class="form-group">
+        <label for="password-input">Password :</label>
+        <input type="password" id="password-input" name="password-input">
+      </div>
+      
+      <div class="form-group">
+        <label for="number-input">Nomor Telepon:</label>
+        <input type="number" id="number-input" name="number-input">
+      </div>
+      
+      <div class="form-group">
+        <label for="textarea-input">Alamat Rumah:</label>
+        <textarea id="textarea-input" name="textarea-input" rows="4"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="textarea-input">Alamat Kantor:</label>
+        <textarea id="textarea-input" name="textarea-input" rows="4"></textarea>
+      </div>
+      
+      <div class="form-group">
+        <label for="select-input">Angkatan:</label>
+        <select id="select-input" name="select-input">
+          <option value="option1">2019</option>
+          <option value="option2">2020</option>
+          <option value="option3">2021</option>
+        </select>
+      </div>
+      
+      <input type="submit" onclick="kirimdata()" value="Submit">
+      <button class="back-button"><a href="halaman1.html">Back</a></button>
+    </form>
+  </div>
+</body>
+</html>
